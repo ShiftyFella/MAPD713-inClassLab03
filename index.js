@@ -77,10 +77,10 @@ seneca.act('role:web', {
         prefix: '/abservice',
         pin: { role: 'api', cmd: '*' },
         map: {
-            'add-user': { GET: true },
+            'add-user': { POST: true },
             'get-all-users': { GET: true },
             'get-user': { GET: true, },
-            'delete-user': { GET: true, }
+            'delete-user': { POST: true, }
         }
     }
 })
